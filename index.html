@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Password Verification</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <h1>User Registration</h1>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <span id="error_name"></span>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" minlength="3">
+                <span id="error_email"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+                <span id="error_pass"></span>
+
+                <label for="re-password">Re-Password:</label>
+                <input type="password" id="repassword">
+                <span id="error_repass"></span>
+            </div>
+            <button id="submit" type="button" onclick="validate()" disabled>Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

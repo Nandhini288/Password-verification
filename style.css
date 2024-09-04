@@ -1,0 +1,91 @@
+
+body{
+    background: linear-gradient(90deg, rgba(200,163,226,1) 0%, rgba(217,122,122,1) 50%, rgba(235,189,125,1) 100%);
+    background-attachment: fixed;
+    margin: 0;
+    top: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#form{
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    color: rgb(200,163,226)
+}
+label{
+    font-size: 20px;
+    width: 150px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+input{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: red;
+    text-align: end;
+}
+
+button:disabled{
+    background: linear-gradient(90deg, rgba(200,163,226,1) 0%, rgba(217,122,122,1) 50%, rgba(235,189,125,1) 100%);
+    color: white;
+    border: 3px solid rgb(4, 6, 70);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+    filter: brightness(30%);
+    cursor: no-drop;
+}
+
+button:enabled{
+    background: linear-gradient(90deg, rgba(200,163,226,1) 0%, rgba(217,122,122,1) 50%, rgba(235,189,125,1) 100%);
+    color: white;
+    border: 3px solid rgb(4, 6, 70);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.input-group input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 7px;
+    border: 1px solid lightseagreen;
+}
+.input-group input:focus{
+    outline:0;
+}
+.input-group.error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.input-group.success input{
+    border-color: green;
+}
+.input-group.error input{
+    border-color: red;
+}
